@@ -8,15 +8,15 @@
 
 int main(void)
 {
-int firstnumber;
-long int number;
-long long int dnumber;
-char character;
-float floatnumber;
-printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(character));
-printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(firstnumber));
-printf("Size of long int: %lu bytes(s)\n" (unsigned long)sizeof(number));
-printf("Size of long long int: %lu byte(s)\n" (unsigned long)sizeof(dnumber));
-printf("Size of a float: %lu byte(s)\n" (unsigned long)sizeof(floatnumber));
+int a;
+long int b;
+long long int c;
+char d;
+float f;
+printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(d));
+printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(a));
+printf("Size of long int: %lu bytes(s)\n" (unsigned long)sizeof(b));
+printf("Size of long long int: %lu byte(s)\n" (unsigned long)sizeof(c));
+printf("Size of a float: %lu byte(s)\n" (unsigned long)sizeof(f));
 return (0);
 }
