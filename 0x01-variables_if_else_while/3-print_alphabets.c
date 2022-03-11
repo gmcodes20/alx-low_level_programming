@@ -12,7 +12,7 @@ int main(void)
 
 	while (n <= 51)
 	{
-		if (n <= 26)
+		if (n <= 25)
 		{
 			putchar(a);
 			a++;
