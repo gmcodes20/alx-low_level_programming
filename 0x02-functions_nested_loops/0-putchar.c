@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 /**
@@ -11,9 +12,11 @@ int main(void)
 	char test[10] = "_putchar";
 	int i;
 
-	for (i = 0; i < 9; i++)
+	i = 0;
+	while (i < 10)
 	{
 		_putchar(test[i]);
+		i++
 	}
 
 	_putchar('\n');
