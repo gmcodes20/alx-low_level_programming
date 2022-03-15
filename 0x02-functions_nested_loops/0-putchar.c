@@ -16,7 +16,7 @@ int main(void)
 	while (i < 10)
 	{
 		_putchar(test[i]);
-		i++
+		i++;
 	}
 
 	_putchar('\n');
