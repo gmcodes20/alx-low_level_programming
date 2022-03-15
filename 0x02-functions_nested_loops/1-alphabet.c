@@ -6,15 +6,14 @@
  * Return: Always 0.
  */
 
-print_alphabet(void)
-{
-	int i;
 
-	for (i = 97; i < 123; i++)
+void print_alphabet(void)
+{
+	char c = 'a';
+	while (c <= 'z')
 	{
-		_putchar(i);
+		_putchar(c);
+		c++;
 	}
 	_putchar('\n');
-	
-	retrun (0);
 }
