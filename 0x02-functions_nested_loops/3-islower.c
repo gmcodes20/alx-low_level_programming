@@ -9,7 +9,7 @@
  * Does my stuff explained.
  */
 
-_islower(int c)
+int _islower(int c)
 {
 	if (islower(c))
 	{
