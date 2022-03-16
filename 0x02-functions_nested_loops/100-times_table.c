@@ -2,7 +2,7 @@
 
 /**
  * print_times_table - prints th 9 times table, starting with 0
- * @n - What n does
+ * @n: - What n does
  */
 
 void print_times_table(int n)
@@ -14,7 +14,7 @@ void print_times_table(int n)
 	{
 		for (j = 0; j < n; j++)
 		{
-			if (! (n > 15 || n < 0))
+			if (!(n > 15 || n < 0))
 		{
 			k = j * i;
 			if (j == 0)
