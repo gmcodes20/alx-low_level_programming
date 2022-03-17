@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_numbers - This function print numbers
+ * print_most_numbers - This function print numbers
  *
  * return: nothing
  */
 
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	int i;
 
