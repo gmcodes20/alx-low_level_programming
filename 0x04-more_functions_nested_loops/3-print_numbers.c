@@ -14,7 +14,7 @@ void print_numbers(void)
 	while (i < 58)
 	{
 		_putchar(i);
-		i++
+		i++;
 	}
 	_putchar('\n');
 	return (0);
