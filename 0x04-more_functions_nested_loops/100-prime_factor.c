@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 /**
@@ -17,8 +16,8 @@ int main(void)
 	{
 		if (number  % div == 0)
 		{
-			number = number / divisor;
-			prime = divisor;
+			number = number / div;
+			prime = div;
 		}
 		div += 1;
 	}
