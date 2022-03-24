@@ -9,16 +9,15 @@
  */
 char *_strcat(char *dest, char *src)
 {
-  int i, lenDest, lenSrc;
+	int i, lenDest, lenSrc;
 
-  lenDest = strlen(dest);
-  lenSrc = strlen(src);
+	lenDest = strlen(dest);
+	lenSrc = strlen(src);
 
-  for (i = 0; i < lenSrc; i++)
-    {
-      dest[lenDest + i] = src[i];
-    }
-  dest[lenDest + i] = '\0';
-  return (dest);
+	for (i = 0; i < lenSrc; i++)
+	{
+		dest[lenDest + i] = src[i];
+	}
+	dest[lenDest + i] = '\0';
+	return (dest);
 }
-© 2022 G
