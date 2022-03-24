@@ -13,9 +13,9 @@ char *string_toupper(char *stri)
 
 	len = strlen(stri);
 
-	for (i = 0; i <  len && s[i] != '\0'; i++)
+	for (i = 0; i <  len && stri[i] != '\0'; i++)
 	{
-		if (stri[i] > 96 && s[i] < 123)
+		if (stri[i] > 96 && stri[i] < 123)
 			stri[i] -= 32;
 	}
 	return (stri);
