@@ -13,14 +13,14 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int i, comp;
+	int i, status;
 
 	i = 0;
 	while (s1[i] != '\0' || s2[i] != '\0')
 	{
 		if (s1[i] != s2[i])
 		{
-			comp = s1[i] - s2[i];
+			status = s1[i] - s2[i];
 			break;
 		}
 		else
@@ -28,5 +28,5 @@ int _strcmp(char *s1, char *s2)
 			return (0);
 		}
 	}
-	return (comp);
+	return (status);
 }
