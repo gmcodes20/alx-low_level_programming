@@ -21,7 +21,7 @@ unsigned int _strspn(char *s, char *accept)
 		b = 0;
 		while (accept[b] != '\0')
 		{
-			if (s[a] == accept[a])
+			if (s[a] == accept[b])
 			{
 				c++;
 				break;
@@ -33,5 +33,5 @@ unsigned int _strspn(char *s, char *accept)
 		break;
 	}
 
-	return (b);
+	return (c);
 }
