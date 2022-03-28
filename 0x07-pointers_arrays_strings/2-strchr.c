@@ -3,25 +3,27 @@
 
 /**
 * _strchr - Return a pointer to the first occurence of the character @c
-* @c: the character in question5D5D5
+* @c: the character in question
 * @s: the string pointer
 *
 * Return: Pointer to c
 */
 
 
-
 char *_strchr(char *s, char c)
 {
+	if (c > 255)
+	{
+		return (NULL);
+	}
 	int s_len;
-        int i;
+	int i;
 
 	if (s == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
-	
-	s_len = strlen(s); 
+	s_len = strlen(s);
 	for (i = 0; i < s_len; i++)
 	{
 		if ((char) c == s[i])
@@ -29,6 +31,6 @@ char *_strchr(char *s, char c)
 			return (&s[i]);
 		}
 	}
-	return NULL;
+	return (NULL);
 
 }
