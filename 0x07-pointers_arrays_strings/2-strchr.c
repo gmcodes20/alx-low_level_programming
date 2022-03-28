@@ -12,13 +12,14 @@
 
 char *_strchr(char *s, char c)
 {
-	if (c > 255)
-	{
-		return (NULL);
-	}
+
 	int s_len;
 	int i;
 
+	if (c == '\0')
+	{
+		return (NULL);
+	}
 	if (s == NULL)
 	{
 		return (NULL);
