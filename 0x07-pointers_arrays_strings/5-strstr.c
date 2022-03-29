@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 
 /**
  * _strstr - finds the first occurence of the substring needle
