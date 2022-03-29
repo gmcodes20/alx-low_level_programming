@@ -1,4 +1,5 @@
 #include "main.h"
+#include <studio.h>
 
 /**
  * print_chessboard - Print a chess board like output
@@ -21,10 +22,10 @@ void print_chessboard(char (*a)[8]);
 			_putchar(a[b][c]);
 			c++
 		}
-		b++;
 		if (a < 8)
 		{
 			_putchar('\n');
 		}
+		b++;
 	}
 }
