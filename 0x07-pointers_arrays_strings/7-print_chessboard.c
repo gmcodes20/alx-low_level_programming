@@ -22,10 +22,11 @@ void print_chessboard(char (*a)[8]);
 			_putchar(a[b][c]);
 			c++
 		}
-		if (a < 8)
-		{
-			_putchar('\n');
-		}
 		b++;
+	}
+
+	if (a < 8)
+	{
+		_putchar('\n');
 	}
 }
