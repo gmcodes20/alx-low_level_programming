@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include<stdlib.h>
 
 /**
  * main - This Program prints the name of the program
@@ -11,13 +11,19 @@
 
 int main(int argc, char *argv[])
 {
-	int i = 0;
+	int mult, num1, num2;
 
-	while (i < argc)
+	if (argc <= 3)
 	{
-		printf("%s\n", argv[i]);
-		i++;
-
+		printf("Error\n");
+		return (1);
+	}
+	else
+	{
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[2]);
+		mult = num1 * num2;
+		printf("%d\n", mult);
 	}
 	return (0);
 }
