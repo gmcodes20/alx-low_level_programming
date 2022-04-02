@@ -19,34 +19,26 @@ int main(int argc, char *argv[])
 		printf("%d\n", 0);
 
 	}
-
 	else
 	{
-		for (i = 1; i < argc; i++)
+	for (i = 1; i < argc; i++)
+	{
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			for (j = 0; argv[i][j] != '\0'; j++)
+			if (argv[i][j] > '9' || argv[i][j] < '0')
 			{
-				if (argv[i][j] > '9' || argv[i][j] < '0')
-				{
-					puts("error");
-					return (1);
-				}
-				else
-				{
-					for (k = 1; k < argc; k++)
-					{
-						num = atoi(argv[k]);
-						add += num;
-					}
-					printf("%d\n", add);
-					return (1);
-				}
+				puts("error");
+				return (1);
 			}
 		}
-
-
+	}
+	for (k = 1; k < argc; k++)
+	{
+		num = atoi(argv[k]);
+		add += num;
+	}
+	printf("%d\n", add);
 
 	}
-
 	return (0);
 }
