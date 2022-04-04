@@ -23,13 +23,13 @@ char *create_array(unsigned int size, char c)
 
 	if (p == NULL)
 		return (0);
-	while ( i <= size + 1)
+	while (i <= size + 1)
 	{
-		p[i + 1] = c;
+		*(p + i) = c;
 		i++;
 	}
 
-	p[i + 1] = '\0';
+	*(p + i) = '\0';
 
 	return (p);
 }
