@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * argstotr - concat all arguements in a prog
+ * argstostr - concat all arguements in a prog
  * @ac: numbers of arguement
  * @av: arguement arrays
  *
